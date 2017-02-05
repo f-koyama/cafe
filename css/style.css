@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+/*reset
+-----------------*/
+html, body, h1, h2, h3, h4, p, ul, li ,dl ,dt, dd {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  font-family:
+   "Hiragino Kaku Gothic ProN",
+    Meiryo,
+    sans-serif;  
+    
+/*    "ヒラギノ明朝 Pro W3", 
+   "Hiragino Mincho Pro", 
+   serif;
+*/
+}
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+img {
+   vertical-align: bottom;
+   border: none;
+}	
+
+body {
+  background: url(../img/bg.png) -200px -10px repeat-x;
+}
+
+/*font-size
+-----------------*/
+body { font-size: 16px; }
+h1 { font-size: 10px; }
+#header dl { font-size: 12px; }
+#nav > ul > li { font-size: 14px; }
+span { font-size: 10px; }
+#footer > dl { font-size: 14px; }
+small { font-size: 12px; }
+
+
+/*layout
+-----------------*/
+#container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*header
+-----------------*/
+#header {
+/*  background: #E0E0E0; /* 後で消す*/
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 20px 30px;
+  position: relative;
+}
+  
+#header h1 {
+  width: 280px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  position: absolute; 
+  top: 50px;
+  right: 20px;
+  color: #4D4D4D;
+}
+
+#header > img {
+  width: 610px;
+  margin-bottom:30px;
+}
+
+#header a:nth-child(3):hover {
+  opacity: 0.7;
+}
+
+#header dl {
+  width: 280px;
+  position: absolute;
+  overflow: hidden;
+  top: 74px;
+  right: 20px;
+  color: #4D4D4D;
+  font-weight: bold;
+}
+
+#header dt {
+  width: 84px;
+  float: left;
+}
+
+#header dt i {
+  padding-right: 8px;
+  font-weight: bold;  
+}
+
+.fa-clock-o {
+  color: #3AA682;
+}
+
+.fa-calendar-times-o {
+  color: #A66C75;
+}
+
+.fa-phone {
+  color: #3A5EA6;
+}
+
+#header dt, #header dd {
+  line-height: 1.5;
+}
+
+#keyvisual #bxslider img {
+}
+
+/*nav
+-----------------*/
+#nav > ul {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+
+#nav > ul > li {
+  text-align: center;
+}
+
+#nav > ul > li > a > span {
+  display: block;
+  line-height: 1.8;
+}
+
+#nav > ul > li > a {
+  display: block;
+  color: #4D4D4D;
+  position: relative;
+}
+
+#nav > ul > li > a:before {
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+#nav > ul > li > a:before {
+  bottom: -6px;
+  display: block;
+  height: 2px;
+  width: 0%;
+  content: "";
+  background-color: #4D4D4D;
+}
+
+#nav > ul > li > a:hover:before {
+  opacity: 1;
+  width: 100%;
+}
+
+/*content
+-----------------*/
+#content {
+  width: 480px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#content > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#content > p {
+  line-height: 1.5;
+}
+
+/*banner
+-----------------*/
+#banner {
+  padding: 30px 0;
+}
+
+#banner > ul {
+  display: flex;
+}
+
+#banner > ul > li {
+  margin-left: 20px;
+}
+
+#banner > ul > li:first-child {
+  margin-left: 0;
+}
+
+/*footer
+-----------------*/
+#fInfo {
+  width: 960px;
+  margin: 0 auto 20px;
+  padding: 30px 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+#footer {
+  background: url(../img/bg.png) 200px 245px repeat-x;
+  padding: 30px 0;
+}
+
+#footer dl {
+  overflow: hidden;
+  width: 420px;
+  margin: 0 auto;
+}
+
+#footer dt {
+  float: left;
+  width: 80px;
+  line-height:1.5;
+}
+
+#footer dd {
+  float: left;
+  width: 340px;
+  line-height:1.5;
+  margin-bottom: 10px;
+}
+
+#footer dd:last-child {
+  margin-bottom: 0;
+}
+
+#footer p {
+  text-align: center;
+  text-shadow: 2px 2px 5px #EAEAEA, -2px 2px 5px #EAEAEA, 2px -2px 5px #EAEAEA, -2px -2px 5px #EAEAEA;
+  padding: 20px 0;
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*header
+-----------------*/
+#header {
+  margin-bottom: 60px;
+}
+
+#keyvisual > p {
+  text-align: center;
+}
+
+#keyvisual > p > img {
+  max-width: 100%;
+}
+ 
+@media screen and (max-width:767px){
+#header {
+  margin-bottom: 0;
+}
+
+}

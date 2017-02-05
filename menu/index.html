@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>東中野の小さなカフェのメニュー | café iwabut（カフェ イワブチ）i</title>
+<meta name="description" content="一つ一つを店舗で丁寧に作りあげた、お菓子と料理でおもてなしいたします。お酒もご用意しており、夜10時まで営業しております。ホールケーキや焼き菓子の詰め合わせセットのご予約も承っております。">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, email=no">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/common_MenAcc.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="../favicon.ico" type="image/vnd.microsoft.ico">
+<link rel="apple-touch-icon" href="../touch-icon.png">
+<link rel="shortcut icon" href="../touch-icon.png">
+<link href="https://fonts.googleapis.com/css?family=Orienta" rel="stylesheet" type="text/css">
+<script src="../js/jquery-2.2.3.min.js"></script>
+<script src="../js/script.js"></script>
+<script>
+$(function(){
+  $('#menuContent').prepend('<div class="tabMenu"></div>');
+  $('.tabMenu').prepend($('.tabHeader'));
+  $('.tabHeader').wrapInner('<a href="javascript: void(0);"></a>');
+
+var current = 0;
+  var show = $('.tabBox').eq(current);
+  $('.tabBox').not(show).hide();
+  $('.tabHeader').eq(current).find('a').addClass('current');
+
+$('.tabMenu a').on('click', function(){
+    $('.tabBox').hide().eq($('.tabMenu a').index(this)).fadeIn(500);
+    $('.tabHeader a').removeClass('current');
+    $(this).addClass('current');
+    return false;
+  });
+});
+
+</script>
+</head>
+
+<body>
+<div id="header">
+<div id="headerWrap">
+<div id="headerInner">
+<h1>東中野の小さなカフェ&nbsp;café iwabuti（カフェ イワブチ）</h1>
+<a href="http://cafeiwabuti.webcrow.jp"><img src="../img/logoTrim_tr.png" alt="café iwabuti logo"></a>
+</div><!-- /#headerInner -->
+
+<dl>
+<dt><i class="fa fa-phone" aria-hidden="true"></i>電話番号</dt>
+<dd lang="en"><a href="tel:070-6520-1755">070-6520-1755</a></dd>
+</dl>
+
+<a href="/access/index.html#information">
+<dl>
+<dt><i class="fa fa-clock-o" aria-hidden="true"></i>営業時間</dt>
+<dd>11:00~22:00</dd>
+<dt><i class="fa fa-calendar-times-o" aria-hidden="true"></i>定休日</dt>
+<dd>火、水曜日<span>（祝日の場合は営業）</span></dd>
+</dl>
+</a>
+
+</div><!-- /#headerWrap -->
+
+<div id="nav">
+<ul>
+<li><a href="http://cafeiwabuti.webcrow.jp">HOME</a></li>
+<li><a href="/index.html?id=container">ABOUT</a></li>
+<li><a href="/menu/">MENU</a></li>
+<li><a href="/access/">ACCESS</a></li>
+<li><a href="/access/index.html?id=accInfo">CONTACT</a></li>
+</ul>
+</div><!-- /nav -->
+
+<div id="keyvisual">
+<p><img src="img/menu_keyv1.png" alt="カフェの料理や食材"></p>
+</div><!-- /#keyvisual -->
+</div><!-- /#header -->
+
+<div id="container">
+<div id="menu">
+<h2>MENU</h2>
+<p>店舗で一つ一つを丁寧に作り上げた、おかしと料理で皆様をおもてなしいたします。</p>
+</div><!-- /#menu -->
+
+<div id="menuContent">
+
+<div id="drink" class="tabBox">
+<h3 class="tabHeader"><i class="fa fa-plus-square" aria-hidden="true"></i><i class="fa fa-minus-square" aria-hidden="true"></i>Drink</h3>
+
+<div class="clear">
+<dl class="drinkWrap drw1">
+<dt>コーヒー<span>coffee</span></dt>
+<dd>¥500</dd>
+
+<dt>カフェオレ<span>cafe au lait</span></dt>
+<dd>¥500</dd>
+
+<dt>チャイ<span>chai</span></dt>
+<dd>¥600</dd>
+
+<dt>紅茶<span>english Tea</span></dt>
+<dd>¥500</dd>
+</dl><!-- /.drinkWrap drw1 -->
+
+<dl class="drinkWrap drw2">
+<dt>ココア<span>cocoa Hot Chocolate</span></dt>
+<dd>¥500</dd>
+
+<dt>オレンジジュース<span>orange juice</span></dt>
+<dd>¥400</dd>
+
+<dt>アップルジュース<span>apple juice</span></dt>
+<dd>¥400</dd>
+
+<dt>コーラ<span>coca cola</span></dt>
+<dd>¥400</dd>
+
+<dt>ジンジャーエール<span>ginger ale</span></dt>
+<dd>¥400</dd>
+</dl><!-- /.drinkWrap drw2 -->
+</div><!-- /.clear -->
+
+<dl class="drinkWrap drw3">
+<dt>ビール<span>beer</span></dt>
+<dd>¥600</dd>
+
+<dt>ワイン（スペイン産 赤/白）<span>wine</span></dt>
+<dd>¥600</dd>
+
+<dt>ハイボール<span>whiskey soda</span></dt>
+<dd>¥600</dd>
+
+<dt>カクテル各種<span>cocktails "ask"</span></dt>
+<dd>¥600~</dd>
+</dl><!-- /.drinkWrap drw3 -->
+
+<img src="img/coffee.png" alt="コーヒー">
+</div><!-- /#drink .tabBox-->
+
+<div id="sweets" class="tabBox">
+<h3 class="tabHeader"><i class="fa fa-plus-square" aria-hidden="true"></i><i class="fa fa-minus-square" aria-hidden="true"></i>Sweets</h3>
+<div class="sweetsWrap">
+<dl>
+<dt>ブラジルのプリン<span>pudding of BRAZIL</span></dt>
+<dd>¥400</dd>
+
+<dt>チョコレートケーキ<span>chocolate cake</span></dt>
+<dd>¥400</dd>
+
+<dt>チーズケーキ<span>cheese cake</span></dt>
+<dd>¥400</dd>
+
+<dt>マドレーヌ各種<span>madeleine</span></dt>
+<dd>¥200</dd>
+
+<dt>ラムレーズンのパウンドケーキ<span>pound cake rum-soaked raisins</span></dt>
+<dd>¥250</dd>
+
+<dt>くるみとチョコのパウンドケーキ<span>pound cake walnut and chocolate</span></dt>
+<dd>¥250</dd>
+</dl>
+<img src="img/sweets.png" alt="マドレーヌ"></div><!-- /.sweetsWrap -->
+<div id="sweetsAbout"> 
+<h4><i class="fa fa-spoon" aria-hidden="true"></i>お菓子について<i class="fa fa-spoon" aria-hidden="true"></i></h4>
+<ul>
+<li>お菓子は全て手づくりです。</li>
+<li>プリン以外はお持ち帰りいただけます。</li>
+<li>¥400のケーキはお持ち帰りでマイナス¥100です。</li>
+<li>ホールケーキのご予約、焼き菓子の詰め合わせセット等も承っております。</li>
+</ul>
+</div><!-- /#sweetsAbout -->
+</div><!-- /#sweets .tabBox-->
+
+<div id="food" class="tabBox">
+<h3 class="tabHeader"><i class="fa fa-plus-square" aria-hidden="true"></i><i class="fa fa-minus-square" aria-hidden="true"></i>Food</h3>
+<div class="foodWrap fdw1">
+<dl>
+<dt>ケーク・サレセット<span>cake sale(unsweet pound cake) <span>w/vegetables</span></span></dt>
+<dd>¥800</dd>
+
+<dt>チキンドリア<span>rice casserole <span>w/white sauce & chicken</span></span></dt>
+<dd>¥800</dd>
+
+<dt>本日のごはん<span>daily meal todays</span></dt>
+<dd>¥800</dd>
+</dl>
+
+</div><!-- /.foodWrap fdw1 -->
+<div id="foodAbout">
+<h4><i class="fa fa-spoon" aria-hidden="true"></i>上記メニューについて<i class="fa fa-spoon" aria-hidden="true"></i></h4>
+<ul>
+<li>ケーク・サレは２種類・上記全てにスープ・サラダが付きます。</li>
+<li>ランチタイム（11:00~14:00）はプラス¥200でコーヒー・紅茶が付きます。</li>
+</ul>
+</div><!-- /#foodAbout -->
+
+<div class="foodWrap fdw2">
+<dl>
+<dt>ケーク・サレ単品<span>cake sale(1p)</span></dt>
+<dd>¥400</dd>
+
+<dt>にんじんサラダ<span>carrot salad</span></dt>
+<dd>¥400</dd>
+
+<dt>パリパリチーズ<span>crispy cheese</span></dt>
+<dd>¥500</dd>
+
+<dt>アンチョビとじゃがいも<span>anchovy potato</span></dt>
+<dd>¥500</dd>
+
+<dt>オイルサーディン<span>oiled sardine</span></dt>
+<dd>¥500</dd>
+
+<dt>ワインとケーク・サレのセット<span>wine& cake sale</span><span>※ケーク・サレ１種とワインのセットです</span></dt>
+<dd>¥900
+</dd>
+</dl>
+
+<img src="img/food.png" alt="料理写真">
+</div><!-- /.foodWrap fdw2 -->
+
+<div id="foodAbout2">
+<h4><i class="fa fa-spoon" aria-hidden="true"></i>ケーク・サレとは<i class="fa fa-spoon" aria-hidden="true"></i></h4>
+<p>ベーコンやチーズ、野菜などをねりこんだ塩あじのケーキです。</p>
+</div><!-- foodAbout2 -->
+
+</div><!-- /#food .tabBox-->
+
+
+</div><!-- /#menuContent -->
+<div id="topBtn"><a href="#header"><img src="../img/topBtn.png" alt="トップへ戻るボタン"></a></div><!-- /#topBtn -->
+</div><!-- /#container -->
+
+<div id="footer">
+<p><small>copyright © 2016 café iwabuti All rights reserved.</small></p>
+</div><!-- /#footer -->
+
+</body>
+</html>
